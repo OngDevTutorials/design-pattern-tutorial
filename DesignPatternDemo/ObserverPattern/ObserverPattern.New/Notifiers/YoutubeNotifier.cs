@@ -1,16 +1,29 @@
 ﻿using System;
-namespace ObserverPattern.Old.Notifier
+using ObserverPattern.New.Base;
+
+namespace ObserverPattern.New.Notifiers
 {
-    public class YoutubeNotifier : INotifier
+    public class YoutubeNotifier : Observer
     {
-        public void Notify(string name, string description, string fileName)
+        public YoutubeNotifier(Subject subject)
         {
-            Console.WriteLine(
-                string.Format($"Notify all subscribers via YOUTUBE with new data" +
-            	                "\n\tName: {0}" +
-                                "\n\tDescription: {1}" +
-                                "\n\tFile name: {2}",
-                                name, description, fileName));
+            this.subject = subject;
+            this.subject.AttachObserver(this);
+        }
+
+        public override void Notify(Subject subject, object arg)
+        {
+            if (subject is VideoData videoData)
+            {
+                Console.WriteLine(
+                    string.Format($"Notify all subscribers via YOUTUBE with new data" +
+                                    "\n\tName: {0}" +
+                                    "\n\tDescription: {1}" +
+                                    "\n\tFile name: {2}",
+                                    videoData.GetTitle(),
+                                    videoData.GetDescription(),
+                                    videoData.GetFileName()));
+            }
         }
     }
 }

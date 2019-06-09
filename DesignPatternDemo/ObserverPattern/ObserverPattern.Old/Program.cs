@@ -6,7 +6,13 @@ namespace ObserverPattern.Old
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var videoData = new VideoData();
+
+            videoData.SetTitle("Observer Design Pattern: Analyze");
+
+            Console.WriteLine("\nUpdated video data!\n");
+
+            videoData.SetDescription("New Description");
         }
     }
 }

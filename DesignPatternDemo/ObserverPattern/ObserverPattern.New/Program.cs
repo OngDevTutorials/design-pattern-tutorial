@@ -1,4 +1,6 @@
 ﻿using System;
+using ObserverPattern.New.Base;
+using ObserverPattern.New.Notifiers;
 
 namespace ObserverPattern.New
 {
@@ -6,7 +8,20 @@ namespace ObserverPattern.New
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var videoData = new VideoData();
+            _ = new EmailNotifier(videoData);
+            _ = new PhoneNotifier(videoData);
+            var youtubeNotifier = new YoutubeNotifier(videoData);
+
+            videoData.SetTitle("Observer Design Pattern");
+
+            videoData.DetachObserver(youtubeNotifier);
+            Console.WriteLine("-------------------------------");
+            videoData.SetDescription("Ongdev's video");
+
+            _ = new FacebookNotifier(videoData);
+            Console.WriteLine("-------------------------------");
+            videoData.SetFileName("A very good tutorial");
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
-namespace ObserverPattern.Old
+namespace ObserverPattern.Old.Notifier
 {
     public interface INotifier
     {
-        void Notify();
+        void Notify(string name, string description, string fileName);
     }
 }
