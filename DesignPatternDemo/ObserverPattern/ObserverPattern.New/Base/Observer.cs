@@ -1,9 +1,8 @@
-﻿using System;
-namespace ObserverPattern.New.Base
+﻿namespace ObserverPattern.New.Base
 {
     public abstract class Observer
     {
-        protected Subject subject;
+        protected Subject Subject;
         public abstract void Notify(object arg);
     }
 }

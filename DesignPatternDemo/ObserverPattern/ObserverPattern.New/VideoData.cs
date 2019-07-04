@@ -1,5 +1,4 @@
-﻿using System;
-using ObserverPattern.New.Base;
+﻿using ObserverPattern.New.Base;
 
 namespace ObserverPattern.New
 {
@@ -48,7 +47,7 @@ namespace ObserverPattern.New
 
         private void VideoDataChanged()
         {
-            NotifyObservers(this, null);
+            NotifyObservers(null);
         }
     }
 }
