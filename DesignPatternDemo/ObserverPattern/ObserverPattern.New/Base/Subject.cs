@@ -17,9 +17,9 @@ namespace ObserverPattern.New.Base
             _observers.Remove(observer);
         }
 
-        public void NotifyObservers(Subject subject, object arg)
+        public void NotifyObservers(object arg)
         {
-            _observers.ForEach((observer) => observer.Notify(subject, arg));
+            _observers.ForEach((observer) => observer.Notify(arg));
         }
     }
 }
