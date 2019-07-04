@@ -11,9 +11,9 @@ namespace ObserverPattern.New.Notifiers
             this.subject.AttachObserver(this);
         }
 
-        public override void Notify(Subject subject, object arg)
+        public override void Notify(object arg)
         {
-            if (subject is VideoData videoData)
+            if (this.subject is VideoData videoData)
             {
                 Console.WriteLine(
                     string.Format($"Notify all subscribers via FACEBOOK with new data" +
