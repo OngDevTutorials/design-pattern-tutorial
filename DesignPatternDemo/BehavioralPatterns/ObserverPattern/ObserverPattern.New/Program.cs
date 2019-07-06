@@ -1,6 +1,5 @@
-﻿using System;
-using ObserverPattern.New.Base;
-using ObserverPattern.New.Notifiers;
+﻿using ObserverPattern.New.Notifiers;
+using System;
 
 namespace ObserverPattern.New
 {
@@ -22,6 +21,8 @@ namespace ObserverPattern.New
             _ = new FacebookNotifier(videoData);
             Console.WriteLine("-------------------------------");
             videoData.SetFileName("A very good tutorial");
+
+            Console.ReadKey();
         }
     }
 }
