@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralPatterns", "BehavioralPatterns", "{C2AA062F-93BF-4EA6-BE6B-3E1F0CD2BD5F}"
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "StructuralPatterns\DecoratorPattern\DecoratorPattern.csproj", "{0B1A0BF6-A30B-4676-A6E2-E35BE2508169}"
 EndProject
 Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "StrategyPattern", "BehavioralPatterns\StrategyPattern\StrategyPattern.csproj", "{9C7BDC8B-143F-4FE5-91C9-D99C96428C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "CreationalPatterns\BuilderPattern\BuilderPattern.csproj", "{5026FD4D-37BD-4B70-9322-871302EB92CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{9C7BDC8B-143F-4FE5-91C9-D99C96428C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C7BDC8B-143F-4FE5-91C9-D99C96428C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C7BDC8B-143F-4FE5-91C9-D99C96428C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5026FD4D-37BD-4B70-9322-871302EB92CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5026FD4D-37BD-4B70-9322-871302EB92CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5026FD4D-37BD-4B70-9322-871302EB92CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5026FD4D-37BD-4B70-9322-871302EB92CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9421E53C-1453-4DE9-B202-D6F6C0169A29} = {C2AA062F-93BF-4EA6-BE6B-3E1F0CD2BD5F}
@@ -53,5 +59,6 @@ Global
 		{491FC486-0AEA-40E9-8FF2-BA926AF9E6E0} = {F0E81811-0B08-4C70-90A1-FDBBE01CC27E}
 		{0B1A0BF6-A30B-4676-A6E2-E35BE2508169} = {FFEC415B-B5E5-44B5-8874-CF416DAE6924}
 		{9C7BDC8B-143F-4FE5-91C9-D99C96428C72} = {C2AA062F-93BF-4EA6-BE6B-3E1F0CD2BD5F}
+		{5026FD4D-37BD-4B70-9322-871302EB92CD} = {F0E81811-0B08-4C70-90A1-FDBBE01CC27E}
 	EndGlobalSection
 EndGlobal
